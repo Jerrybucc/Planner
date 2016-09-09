@@ -12,49 +12,30 @@
 <body>
 <div class="container">
 	<div id="printHide" class="well">
-	<h1 class="center"><b>Planner</b></h1>
-	<div class="btn-group">
-		<button id="create" class="btn btn-success">Get Plan Table</button>
-	</div>
-	<div class="btn-group">
-		<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Download for Mobile devices<span class="caret"></span></button>
-		<ul class="dropdown-menu">
-			<li><a tabindex="-1" href="./download/planAssistTool_android.apk">Download for Android App</a></li>
-			<li><a tabindex="-1" href="javascript:alert('This function is not available, yet!')">Download for IPhone App</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Download My plan<span class="caret"></span></button>
-		<ul class="dropdown-menu">
-			<li><a id="dPDF" tabindex="-1" href="javascript:window.print()">Download by PDF</a></li>
-			<li><a id="dExcel" tabindex="-1" href="javascript:alert('This function is not available, yet!')">Download by Excel</a></li>
-			<li class="divider"></li>
-			<li><a id="nod" tabkeindex="-1" href="javascript:void(0)">I don't want to download</a></li>
-		</ul>
-	</div>
-
-	<div class="well">
-		<span class="lead">First: Read and fill the following statements step by step!</span><br/>
-		<span>Plan name</span>
-			<input id="planName" type="text" placeholder="e.g. MyPlan" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
-		<span>Tag name:</span>
-			<input id="tagName" type="text" placeholder="e.g. chapter list section test no." data-provide="typehead" autocoplete="off" data-minLength="1" data-source="["list","chapter","section","test","no."]" /><br/>
-		<span>Font size:</span>
-			<div class="btn-group" data-toggle="btn-checkbox">
-				<button id="small_btn" class="btn btn-success">small</button>
-				<button id="middle_btn" class="btn btn-success">middle</button>
-				<button id="large_btn" class="btn btn-success">large</button>
-			</div><br/>
-		<span>Start with:</span>
-			<input id="startDate" type="text" placeholder="yyyy-mm-dd" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
-		<span>How much do you learn per day?</span>
-			<input id="listPerDay" type="text" placeholder="e.g. 2" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
-		<span>What is the total amount of your book?</span>
-			<input id="total" type="text" placeholder="e.g. 45" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
-		<span>Start Page:</span>
-			<input id="startPage" type="text" placeholder="default: 1" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
-		<span class="lead">Second: Click the above <p class="inline btnimg">Get Plan Table</p> button to form your own plan!</span>
-	</div>
+		<h1 class="center"><b>Planner</b></h1>
+		<div class="well">
+			<span class="lead">First: Read and fill the following statements step by step!</span><br/>
+			<span>Plan name</span>
+				<input id="planName" type="text" placeholder="e.g. MyPlan" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
+			<span>Tag name:</span>
+				<input id="tagName" type="text" placeholder="e.g. chapter list section test no." data-provide="typehead" autocoplete="off" data-minLength="1" data-source="["list","chapter","section","test","no."]" /><br/>
+			<span>Font size:</span>
+				<div class="btn-group" data-toggle="btn-checkbox">
+					<button id="small_btn" class="btn btn-success">small</button>
+					<button id="middle_btn" class="btn btn-success">middle</button>
+					<button id="large_btn" class="btn btn-success">large</button>
+				</div><br/>
+			<span>Start with:</span>
+				<input id="startDate" type="text" placeholder="yyyy-mm-dd" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
+			<span>How much do you learn per day?</span>
+				<input id="listPerDay" type="text" placeholder="e.g. 2" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
+			<span>What is the total amount of your book?</span>
+				<input id="total" type="text" placeholder="e.g. 45" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
+			<span>Start Page:</span>
+				<input id="startPage" type="text" placeholder="default: 1" data-provide="typehead" autocoplete="off" data-minLength="1" /><br/>
+			<span class="lead">Second: Click<button id="create" class="btn btn-success">Get Plan Table</button> to form your own plan!</span>
+			<span class="lead">Third: Click<a id="dPDF" class="btn btn-success" tabindex="-1" href="javascript:window.print()">Download by PDF</a> to Download the PDF file!</span>
+		</div>
 	</div>
 	<div class="well">
 		<h1 class="center">Sample</h1>
